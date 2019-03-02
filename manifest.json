@@ -1,15 +1,28 @@
 {
-  "manifest_version": 2,
-  "name": "Family Extension",
-  "description": "A simple calculator.",  
+  "name": "Getting Started Example",
   "version": "1.0",
-  "offline_enabled": true,  
+  "description": "A simple calculator.",
+"permissions": ["activeTab","declarativeContent", "storage"],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icon_128.png",
+      "32": "assets/icon_128.png",
+      "48": "assets/icon_128.png",
+      "128": "assets/icon_128.png"
+    }
+  },
   "icons": {
+    "16": "assets/icon_128.png",
+    "32": "assets/icon_128.png",
+    "48": "assets/icon_128.png",
     "128": "assets/icon_128.png"
   },
-  "app": {
-    "background": {
-      "scripts": ["background.js"]
-    }
-  }
+  "manifest_version": 2
 }
