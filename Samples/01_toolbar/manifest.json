@@ -5,16 +5,27 @@
   "version": "1.0",
   "content_scripts": [
     {
-      "matches": ["https://*/*"],
-      "css": ["assets/css/myStyles.css"],
-      "js": ["assets/javascript/jquery.js","assets/javascript/contentScript.js"]
+      "matches": [
+        "https://*/*"
+      ],
+      "css": [
+        "assets/css/myStyles.css"
+      ],
+      "js": [
+        "assets/javascript/jquery.js",
+        "assets/javascript/contentScript.js"
+      ]
     }
   ],
   "icons": {
-    "128": "assets/icon_128.png"
+    "16": "assets/images/icon_toolbar.png",
+    "48": "assets/images/icon_toolbar.png",
+    "128": "assets/images/icon_toolbar.png"
   },
   "background": {
-    "scripts": ["background.js"]
+    "scripts": [
+      "background.js"
+    ]
   },
   "web_accessible_resources": [
     "toolbar.html"
