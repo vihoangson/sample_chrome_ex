@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Family Extension",
+  "description": "A simple calculator.",  
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "css": ["assets/css/myStyles.css"],
+      "js": ["assets/javascript/contentScript.js"]
+    }
+  ],
+  "icons": {
+    "128": "assets/icon_128.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
