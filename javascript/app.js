@@ -1,16 +1,15 @@
-$(document).ready(function(){
-    $('button').click(function(){
-        alert(123);
-    });
+$('button').click(function () {
+
     $.ajax({
         url: "https://reqres.in/api/users",
         type: "POST",
         data: {
-            name: "paul rudd",
+            name: $("#registerSubmit").serialize(),
             movies: ["I Love You Man", "Role Models"]
         },
-        success: function(response){
-            console.log(response);
+        success: function (response) {
+            $(".container").prepend(JSON.stringify(response));
         }
     });
-})
+
+});
