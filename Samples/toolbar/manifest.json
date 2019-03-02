@@ -1,13 +1,13 @@
 {
   "manifest_version": 2,
-  "name": "Family Extension",
-  "description": "A simple calculator.",  
+  "name": "Show toolbar by iframe",
+  "description": "A simple extension.",
   "version": "1.0",
   "content_scripts": [
     {
       "matches": ["https://*/*"],
       "css": ["assets/css/myStyles.css"],
-      "js": ["assets/javascript/contentScript.js"]
+      "js": ["assets/javascript/jquery.js","assets/javascript/contentScript.js"]
     }
   ],
   "icons": {
@@ -15,5 +15,8 @@
   },
   "background": {
     "scripts": ["background.js"]
-  }
+  },
+  "web_accessible_resources": [
+    "toolbar.html"
+  ]
 }
