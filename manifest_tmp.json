@@ -1,0 +1,30 @@
+{
+  "name": "Getting Started Example",
+  "version": "1.0",
+  "description": "A simple calculator.",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icon_128.png",
+      "32": "assets/icon_128.png",
+      "48": "assets/icon_128.png",
+      "128": "assets/icon_128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icon_128.png",
+    "32": "assets/icon_128.png",
+    "48": "assets/icon_128.png",
+    "128": "assets/icon_128.png"
+  },
+  "manifest_version": 2
+}
