@@ -12,6 +12,6 @@ $.ajax({
         // console.log(response.data[0].avatar);
         //$(".slider__overlay h2").html(response.data[0].avatar);
         // console.log(JSON.stringify(response.fake));
-        $("body").html('<img src="'+response.data[0].avatar+'">');
+        //$("body").html('<img src="'+response.data[0].avatar+'">');
     }
 });
