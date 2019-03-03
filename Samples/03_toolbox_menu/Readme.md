@@ -53,3 +53,11 @@ Hàm dùng để mã hóa các ký tự đặc biết đưa lên url
 ```$xslt
 encodeURIComponent(value.selectionText)
 ```
+
+Đường dẫn public ứng dụng lên internet (Phải trả 5$ để đăng ký)
+
+[Links](https://chrome.google.com/webstore/developer/dashboard?hl=vi)
+
+```$xslt
+https://chrome.google.com/webstore/developer/dashboard?hl=vi
+```
