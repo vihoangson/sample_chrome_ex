@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "Show toolbar by iframe",
+  "description": "A simple extension.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "css": [
+        "assets/css/myStyles.css"
+      ],
+      "js": [
+        "assets/javascript/jquery.js",
+        "assets/javascript/contentScript.js",
+        "assets/javascript/contentScript.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "assets/images/icon_fb.png",
+    "48": "assets/images/icon_fb.png",
+    "128": "assets/images/icon_fb.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "assets/images/icon_fb.png",
+      "24": "assets/images/icon_fb.png",
+      "32": "assets/images/icon_fb.png"
+    },
+    "default_title": "Facebook",
+    "default_popup": "popup.html"
+  }
+}
