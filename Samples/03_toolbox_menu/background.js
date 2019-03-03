@@ -11,7 +11,15 @@ chrome.contextMenus.create(
             // "selectionText":"ho con cái để ứng phó với thời đại ngập"
             // }
             //alert(JSON.stringify(value));
-            chrome.tabs.create({url: 'http://vihoangson.com?params=' + encodeURIComponent(value.selectionText)})
+            var isOpenTab = false;
+            if (isOpenTab) {
+                chrome.tabs.create({url: 'http://vihoangson.com?params=' + encodeURIComponent(value.selectionText)})
+            } else {
+                chrome.windows.create({
+                    url: 'http://vihoangson.com?params=' + encodeURIComponent(value.selectionText),
+                    type: "panel"
+                })
+            }
         }
     }
 )
