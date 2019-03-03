@@ -47,3 +47,9 @@ Struct reponse callback in selection
          "selectionText":"ho con cái để ứng phó với thời đại ngập"
      }
 ```
+
+Hàm dùng để mã hóa các ký tự đặc biết đưa lên url
+
+```$xslt
+encodeURIComponent(value.selectionText)
+```
