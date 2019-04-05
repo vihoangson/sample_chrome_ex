@@ -1,0 +1,25 @@
+{
+    "name": "Redmine extension",
+    "version": "1.0",
+    "description": "Redmine extension",
+    "permissions": [],
+    "content_scripts": 
+    [
+        {
+            "matches": 
+            [
+                "http://family.vihoangson.com/*",
+                "https://family.vihoangson.com/*"
+            ],
+            "css":
+            [
+                "style.css"
+            ],
+            "js": 
+            [
+                "background.js"
+            ]
+        }
+    ],
+    "manifest_version": 2
+}
