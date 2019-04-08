@@ -16,8 +16,9 @@ $(".jobtype").change(function(){
 	}}
 })
 $(".jobtype_hideallother").click(function(){	
-	$("#issue_tree tr.issue  > td:nth-child(4)").each(function(k,v){
-		if($(this).html()!='<a href="/users/98" class="user active">Son Vi Hoang [PG]</a>'){
+	let my_link_acc = $("#loggedas .user.active").attr('href');
+	$("#issue_tree tr.issue  > td:nth-child(4)").each(function(k,v){	
+		if($(this).children("a").attr('href') != my_link_acc){
 			$(this).parent('tr').addClass('hidden');
 		}	
 	});		
