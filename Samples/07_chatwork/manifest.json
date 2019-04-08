@@ -1,14 +1,15 @@
 {
-    "name": "Redmine extension",
+    "name": "Chatwork auto F1 F2",
     "version": "1.0",
-    "description": "Redmine extension",
+    "description": "Chatwork auto F1 F2",
     "permissions": [],
     "content_scripts": 
     [
         {
             "matches": 
             [
-                "https://redmine.lampart-vn.com/*"
+                "https://chatwork.com/*",
+                "https://www.chatwork.com/*"
             ],
             "css":
             [

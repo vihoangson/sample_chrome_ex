@@ -1,3 +1,4 @@
+
 $("#issue_tree").before("<input class='jobtype' type='checkbox' data-color='true' id='div_coloring'><label for='div_coloring'>Coloring</label>");
 $("#issue_tree").before("<input class='jobtype_hideall' type='button' data-ele='HideAll' id='div_9' value='HideAll'>");
 $("#issue_tree").before("<input class='jobtype_hideallother' type='button' data-ele='HideAll' id='div_9' value='HideAll other'>");

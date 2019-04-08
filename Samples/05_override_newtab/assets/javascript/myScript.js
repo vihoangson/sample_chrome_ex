@@ -1,10 +1,18 @@
 
-$('body').html('');
+// $('body').html('');
 
 var myGamePiece;
 var myGamePiece2;
 
 function startGame() {
+return;
+    //div_e = document.createElement('div')
+    // div_e = $("<div class='tmp'></div>")[0]
+    // document.body.append(div_e)
+    
+    // div_e2 = div_e.clone().addClass('class_name')[0]
+    // document.body.append(div_e2)
+
     myGameArea.start();
     myGamePiece = new component(30, 30, "red", 10, 120);
     myGamePiece.update()
@@ -47,12 +55,11 @@ startGame();
 
 
 
-$(document).keydown(function(e){
-
+$(document).keypress(function(e){
+console.log(e);
     switch(e.which){
         case 37:        
         k = 'left'
-
         myGamePiece.x -=  1;
         break;
         case 38:        
@@ -74,10 +81,5 @@ $(document).keydown(function(e){
     }
     myGameArea.clear();
     myGamePiece.update();
-    console.log(k);
-    console.log(myGamePiece.x);
-    
     flag = 'on';
-
-
 })
