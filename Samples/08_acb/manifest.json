@@ -1,0 +1,25 @@
+{
+    "name": "ACB extension",
+    "version": "1.0",
+    "description": "ACB extension",
+    "permissions": [],
+    "content_scripts": 
+    [
+        {
+            "matches": 
+            [
+                "https://online.acb.com.vn/*"
+            ],
+            "css":
+            [
+                "style.css"
+            ],
+            "js": 
+            [
+                "scripts/jquery.js",
+                "scripts/background.js"
+            ]
+        }
+    ],
+    "manifest_version": 2
+}
