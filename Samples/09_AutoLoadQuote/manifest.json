@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Auto load quote",
+  "description": "Auto load quote.",
+  "version": "1.0",
+  "permissions": [
+  ],
+  "chrome_url_overrides" : {
+    "newtab": "Overriden.html"
+  },
+  "content_scripts": [
+  ],
+  "icons": {
+    "16": "assets/images/icon_override.png",
+    "48": "assets/images/icon_override.png",
+    "128": "assets/images/icon_override.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+
+}
